@@ -1,0 +1,151 @@
+---
+title: Diligent Office - Audit și Fonduri Nerambursabile
+layout: default
+bodyClass: page-home
+---
+
+<div class="intro pb-4">
+  <div class="container">
+    <h1>
+      Audit și Fonduri Nerambursabile
+    </h1>
+    <p>
+      Ajutăm sute de afaceri cu servicii de audit și consultanță în accesarea fondurilor nerambursabile.
+    </p>
+  </div>
+</div>
+
+<div class="container pt-2">
+  <div class="call">
+    <div class="call-box-top">
+      <h4>Telefon</h4>
+      <p>
+        <strong>
+          0751 450 210
+        </strong>
+        - Fonduri Europene
+      </p>
+      <p class="mb-1">
+        <strong>
+          0756 605 796
+        </strong>
+        - Audit Financiar
+      </p>
+
+      <h4>Email</h4>
+      <a href="mailto:office@diligentoffice.ro">
+        <strong>
+          office@diligentoffice.ro
+        </strong>
+      </a>
+    </div>
+    <div class="call-box-bottom">
+      <a href="{{site.baseurl}}/contact" class="button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-3">
+        Serviciile noastre
+      </h2>
+    </div>
+    {% for service in site.services %}
+    <div class="col-12 col-md-6 mb-1">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{site.baseurl}}{{ service.url }}">
+              {{ service.title }}
+            </a>
+          </h2>
+          {{ service.description }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="col-12 text-center">
+      <a class="button button-primary mt-2" href="{{site.baseurl}}/services">
+        Toate serviciile
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-4">
+        Oportunități de Finanțare
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h3>
+        Fonduri Europene
+      </h3>
+    </div>
+  </div>
+  <div class="row">
+    {% assign european = site.funding | where: "type", "european" %}
+    {% for service in european %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{site.baseurl}}{{ service.url }}">
+              {{ service.title }}
+            </a>
+          </h2>
+          {{ service.description }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h2>
+        Fonduri Guvernamentale
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    {% assign governmental = site.funding | where: "type", "governmental" %}
+    {% for service in governmental %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{site.baseurl}}{{ service.url }}">
+              {{ service.title }}
+            </a>
+          </h2>
+          {{ service.description }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <a class="button button-primary mt-2" href="{{site.baseurl}}/services">
+        Oportunități de Finanțare
+      </a>
+    </div>
+  </div>
+
+    <!--{% for feature in site.data.features %}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="feature">
+        {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
+        <h2 class="feature-title">{{ feature.title }}</h2>
+        <div class="feature-content">{{ feature.description }}</div>
+      </div>
+    </div>
+    {% endfor %}-->
+</div>

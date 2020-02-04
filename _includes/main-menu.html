@@ -1,0 +1,22 @@
+<ul>
+  <li>
+    <a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">
+      Acasă
+    </a>
+  </li>
+  <li>
+    <a href="{{site.baseurl}}/services/" class="{% if page.url contains 'services' %}current{% endif %}">
+      Servicii
+    </a>
+  </li>
+  <li>
+    <a href="{{site.baseurl}}/funding/" class="{% if page.url contains 'funding' %}current{% endif %}">
+      Finanțare
+    </a>
+  </li>
+  <li>
+    <a href="{{site.baseurl}}/contact/" class="{% if page.url contains 'contact' %}current{% endif %}">
+      Contact
+    </a>
+  </li>
+</ul>

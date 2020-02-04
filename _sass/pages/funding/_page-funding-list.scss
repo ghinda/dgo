@@ -1,0 +1,16 @@
+.page-funding-list .intro {
+  background-image: url('../images/undraw_business_shop_qw5t.svg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 10px 10px;
+
+  @include media-breakpoint-up(md) {
+    background-size: 44%;
+    background-position: right 10px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-size: 40%;
+    background-position: 90% 10px;
+  }
+}

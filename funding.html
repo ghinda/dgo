@@ -1,0 +1,71 @@
+---
+title: Fonduri
+layout: default
+bodyClass: page-funding-list
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>
+          Oportunități de Finanțare
+        </h1>
+        <p>
+          Our business helps hundreds of customers with their accounting and
+          taxation needs each year.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    <div class="col-12">
+      <h2>
+        Fonduri Europene
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    {% assign european = site.funding | where: "type", "european" %}
+    {% for program in european %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{site.baseurl}}{{ program.url }}">{{ program.title }}</a>
+          </h2>
+          {{ program.content | markdownify | strip_html | truncate: 100 }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    <div class="col-12">
+      <h2>
+        Fonduri Guvernamentale
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    {% assign governmental = site.funding | where: "type", "governmental" %}
+    {% for program in governmental %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{site.baseurl}}{{ program.url }}">{{ program.title }}</a>
+          </h2>
+          {{ program.content | markdownify | strip_html | truncate: 100 }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
