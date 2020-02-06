@@ -11,10 +11,6 @@ bodyClass: page-funding-list
         <h1>
           Oportunități de Finanțare
         </h1>
-        <p>
-          Our business helps hundreds of customers with their accounting and
-          taxation needs each year.
-        </p>
       </div>
     </div>
   </div>
@@ -37,7 +33,7 @@ bodyClass: page-funding-list
           <h2 class="service-title">
             <a href="{{site.baseurl}}{{ program.url }}">{{ program.title }}</a>
           </h2>
-          {{ program.content | markdownify | strip_html | truncate: 100 }}
+          {{ program.description }}
         </div>
       </div>
     </div>

@@ -1,13 +1,9 @@
 ---
 title: 'Programul Național de Dezvoltare Rurală'
 image: '/services/default.png'
-description: 'descriere'
+description: 'Dezvoltarea economico – socială a spaţiului rural din România.'
 type: european
 ---
-
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
 
 ## Programul Național de Dezvoltare Rurală <br> (PNDR 2014 - 2020)
 

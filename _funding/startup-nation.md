@@ -1,7 +1,7 @@
 ---
 title: 'Start-up Nation'
 image: '/services/default.png'
-description: 'descriere'
+description: 'Încurajarea spiritului antreprenorial în producție, comerț și până la prestări servicii.'
 type: governmental
 ---
 

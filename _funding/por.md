@@ -1,13 +1,9 @@
 ---
 title: 'Programul Operațional Regional'
 image: '/services/default.png'
-description: 'descriere'
+description: 'Creșterea competitivității economice și îmbunătăţirea condițiilor de viață ale comunităților locale și regionale.'
 type: european
 ---
-
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
 
 ## Programul Operațional Regional (POR)
 

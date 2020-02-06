@@ -1,7 +1,7 @@
 ---
 title: 'Microindustrializare'
 image: '/services/default.png'
-description: 'descriere'
+description: 'Dezvoltarea întreprinderilor mici şi mijlocii în sectoare prioritare aferent sectoarelor de producție.'
 type: governmental
 ---
 

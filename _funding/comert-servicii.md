@@ -1,7 +1,7 @@
 ---
 title: 'Comerț si Servicii'
 image: '/services/default.png'
-description: 'descriere'
+description: 'Activităţi de comercializare a produselor şi a serviciilor de piaţă, pentru întreprinderi mici şi mijlocii.'
 type: governmental
 ---
 

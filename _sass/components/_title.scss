@@ -10,23 +10,29 @@
     color: #222222;
   }
 }
+
 .title-2 {
   font-family: $font-family-base;
   font-weight: light;
-  color: #333333;
+  color: #333;
   font-size: 2.4rem;
+
   @include media-breakpoint-up(md) {
     font-size: 4rem;
   }
+
   a {
     display: block;
   }
 }
+
 .title-3 {
   font-family: $font-family-base;
   font-weight: light;
-  color: #333333;
-  font-size: 1.6rem;
+  color: #333;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+
   @include media-breakpoint-up(sm) {
     font-size: 2rem;
   }

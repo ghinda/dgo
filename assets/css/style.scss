@@ -1,12 +1,15 @@
 ---
-# this ensures Jekyll reads the file to be transformed into CSS later
-# only Main files contain this front matter, not partials.
 ---
 
-// Font
+/* diligentoffice.ro
+ */
+
+/* font
+ */
 @import url('https://fonts.googleapis.com/css?family=Lora:400|Open+Sans:400,700');
 
-// Bootstrap
+/* bootstrap
+ */
 @import 'bootstrap/functions';
 @import 'bootstrap-variables';
 @import 'bootstrap/variables';
@@ -16,38 +19,18 @@
 @import 'bootstrap/grid';
 @import 'bootstrap/type';
 @import 'bootstrap/tables';
-// @import "bootstrap/images";
-// @import "bootstrap/code";
-// @import "bootstrap/forms";
-// @import "bootstrap/buttons";
-// @import "bootstrap/transitions";
-// @import "bootstrap/dropdown";
-// @import "bootstrap/button-group";
-// @import "bootstrap/input-group";
-// @import "bootstrap/custom-forms";
-// @import "bootstrap/nav";
-// @import "bootstrap/navbar";
-// @import "bootstrap/card";
-// @import "bootstrap/breadcrumb";
-// @import "bootstrap/pagination";
-// @import "bootstrap/badge";
-// @import "bootstrap/jumbotron";
-// @import "bootstrap/alert";
-// @import "bootstrap/progress";
-// @import "bootstrap/media";
-// @import "bootstrap/list-group";
-// @import "bootstrap/close";
-// @import "bootstrap/modal";
-// @import "bootstrap/tooltip";
-// @import "bootstrap/popover";
-// @import "bootstrap/carousel";
-// @import "bootstrap/print";
 @import 'bootstrap/utilities';
 
-// Libraries
+/* mobile menu
+ */
 @import 'libraries/hamburgers/hamburgers';
 
-// Components
+/* components
+ */
+@import 'components/header';
+@import 'components/page';
+@import 'components/strip';
+
 @import 'components/footer';
 @import 'components/sub-footer';
 @import 'components/logo';
@@ -62,7 +45,8 @@
 @import 'components/whitebox';
 @import 'components/feature';
 
-// Pages
+/* Pages
+ */
 @import 'pages/home';
 @import 'pages/team/team-list';
 @import 'pages/team/team-summary';
@@ -75,3 +59,10 @@
 @import 'pages/services/service-single';
 @import 'pages/services/service-summary';
 @import 'pages/funding/page-funding-list';
+
+/* General
+ */
+body {
+  background-color: #f2f2f2;
+}
+

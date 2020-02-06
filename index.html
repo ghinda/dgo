@@ -46,15 +46,20 @@ bodyClass: page-home
 </div>
 
 <div class="container pt-8 pt-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12">
-      <h2 class="title-3 text-dark mb-3">
+  <div class="row justify-content-start mb-2 text-center">
+    <div class="col-12 mb-3">
+      <h2 class="title-3 text-dark">
         Serviciile noastre
       </h2>
+      <p class="text-secondary">
+        Putem ajuta și afacerea ta
+      </p>
     </div>
+  </div>
+  <div class="row justify-content-center">
     {% for service in site.services %}
-    <div class="col-12 col-md-6 mb-1">
-      <div class="service service-summary">
+    <div class="col-12 col-md-4 mb-2">
+      <div class="service service-summary text-center">
         <div class="service-content">
           <h2 class="service-title">
             <a href="{{site.baseurl}}{{ service.url }}">
@@ -66,30 +71,25 @@ bodyClass: page-home
       </div>
     </div>
     {% endfor %}
-    <div class="col-12 text-center">
-      <a class="button button-primary mt-2" href="{{site.baseurl}}/services">
-        Toate serviciile
-      </a>
-    </div>
   </div>
 </div>
 
-<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+<div class="container pt-5 pb-5 pt-md-10 pb-md-7 text-center">
   <div class="row justify-content-center">
     <div class="col-12">
-      <h2 class="title-3 text-dark mb-4">
+      <h2 class="title-3 text-dark mb-5">
         Oportunități de Finanțare
       </h2>
     </div>
   </div>
   <div class="row">
-    <div class="col-12">
-      <h3>
+    <div class="col-12 mb-2">
+      <h5>
         Fonduri Europene
-      </h3>
+      </h5>
     </div>
   </div>
-  <div class="row">
+  <div class="row justify-content-center mb-5">
     {% assign european = site.funding | where: "type", "european" %}
     {% for service in european %}
     <div class="col-12 col-md-4 mb-1">
@@ -108,16 +108,16 @@ bodyClass: page-home
   </div>
 
   <div class="row">
-    <div class="col-12">
-      <h2>
+    <div class="col-12 mb-2">
+      <h5>
         Fonduri Guvernamentale
-      </h2>
+      </h5>
     </div>
   </div>
-  <div class="row">
+  <div class="row justify-content-center">
     {% assign governmental = site.funding | where: "type", "governmental" %}
     {% for service in governmental %}
-    <div class="col-12 col-md-4 mb-1">
+    <div class="col-12 col-md-3 mb-2">
       <div class="service service-summary">
         <div class="service-content">
           <h2 class="service-title">
