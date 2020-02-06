@@ -92,7 +92,7 @@ bodyClass: page-home
   <div class="row justify-content-center mb-5">
     {% assign european = site.funding | where: "type", "european" %}
     {% for service in european %}
-    <div class="col-12 col-md-4 mb-1">
+    <div class="col-12 col-lg-4 mb-1">
       <div class="service service-summary">
         <div class="service-content">
           <h2 class="service-title">
@@ -117,7 +117,7 @@ bodyClass: page-home
   <div class="row justify-content-center">
     {% assign governmental = site.funding | where: "type", "governmental" %}
     {% for service in governmental %}
-    <div class="col-12 col-md-3 mb-2">
+    <div class="col-12 col-lg-3 mb-2">
       <div class="service service-summary">
         <div class="service-content">
           <h2 class="service-title">
@@ -138,14 +138,4 @@ bodyClass: page-home
       </a>
     </div>
   </div>
-
-    <!--{% for feature in site.data.features %}
-    <div class="col-12 col-md-6 col-lg-4 mb-2">
-      <div class="feature">
-        {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
-        <h2 class="feature-title">{{ feature.title }}</h2>
-        <div class="feature-content">{{ feature.description }}</div>
-      </div>
-    </div>
-    {% endfor %}-->
 </div>
